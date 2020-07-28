@@ -1,0 +1,79 @@
+    body {
+      font-family: Arial, Helvetica, Verdana;
+    }
+    .flex-container{
+    max-width:95%;
+    width:90%;
+    list-style-type:none;
+    margin:20px auto;
+    padding:0;
+    background-color:#eee;
+
+    /*Flexbox setup*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.item{
+    height:280px;
+    width:300px;
+    font-size:20px;
+    background-color:#D3D3D3;
+    color:#fff;
+    text-align:center;
+    margin:10px 5px;
+}
+
+table{
+    margin: 0 auto;
+    width: 50%;
+    border: 1px dotted #333;
+}
+#left a{
+    color: #333;
+    text-decoration: underline;
+    float: left;
+}
+#right{
+    color: crimson;
+ float: right;
+
+}
+.tamanoimg{
+    width:300px;
+    height: 190px;
+    text-align: center;
+}
+#detalle{
+    color: #333;
+}
+#circulo{
+    width: 40px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #cecece;
+    color: #fefefe;
+    float: left;
+}
+#circulo:hover{
+    cursor: pointer;
+    background-color: #C0C0C0;
+}
+.boton{
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    margin: 15px 0px;
+}
+.botoncompar{
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+}
+.boton, .botoncompar:hover{
+    cursor: pointer;
+}
+
