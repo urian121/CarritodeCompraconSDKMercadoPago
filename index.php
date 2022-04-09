@@ -110,7 +110,7 @@ while ($Product = mysqli_fetch_array($jqueryProduct)) { ?>
         <h3><?php echo $Product['name'];  ?></h3>
         <p>
             <?php echo number_format($Product['precio'], 0, ",", "."); ?> $</p>
-        <input type="hidden" name="cod_user" id="cod_user" value="<?php echo $_SESSION['cod_user']; ?>">
+        <input type="hidden" name="cod_user" id="cod_user" value="<?php echo !empty($_SESSION['cod_user']); ?>">
         <button type="submit"  class="botoncompar btn btn-primary" id="<?php echo $Product['id']; ?>">Comprar..</button>
         <br><br>
       </div>
